@@ -1,0 +1,27 @@
+{
+  "name": "component-builder-less",
+  "version": "0.0.0",
+  "description": "A component (v1+) builder plugin for LESS -> CSS conversion",
+  "keywords": [
+    "component",
+    "builder",
+    "plugin",
+    "less"
+  ],
+  "author": "Dominic Barnes <dominic@dbarnes.info>",
+  "homepage": "https://github.com/dominicbarnes/component-builder-less",
+  "bugs": {
+    "url": "https://github.com/dominicbarnes/component-builder-less/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dominicbarnes/component-builder-less.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "extend": "^1.2.1",
+    "less": "^1.7.0",
+    "debug": "^0.8.0"
+  },
+  "main": "index.js"
+}
