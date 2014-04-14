@@ -13,6 +13,9 @@ var debug = require("debug")("component-builder-less");
  * @param {Object} options
  */
 module.exports = function (options) {
+    if (!options)       options = {};
+    if (!options.paths) options.paths = [];
+
     debug("creating builder plugin function", options);
 
     return function (file, done) {
