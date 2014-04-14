@@ -1,6 +1,6 @@
 {
   "name": "component-builder-less",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component (v1+) builder plugin for LESS -> CSS conversion",
   "keywords": [
     "component",
