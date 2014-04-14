@@ -48,6 +48,7 @@ module.exports = function (options) {
                     return done(err);
                 }
 
+                file.extension = "css";
                 file.string = css;
                 done();
             });
