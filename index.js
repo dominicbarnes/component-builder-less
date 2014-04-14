@@ -1,5 +1,4 @@
 // dependencies
-var path = require("path");
 var extend = require("extend");
 var less = require("less");
 var debug = require("debug")("component-builder-less");
@@ -22,7 +21,7 @@ module.exports = function (options) {
         // only run this transformation for .less files
         if (file.extension !== "less") return done();
 
-        debug("processing %s", file.filename);
+        debug("processing", file.filename);
 
         // setting up default config options
         var defaults = {
@@ -30,14 +29,12 @@ module.exports = function (options) {
             filename: file.filename
         };
 
-        debug("default options", defaults);
-
         // create a new options object for this specific file
         // notice, this particular extend works like jQuery's extend,
         // so we're deep-extending this object.
         var opts = extend(true, {}, defaults, options);
 
-        debug("all options", opts);
+        debug("options", opts);
 
         file.read(function (err, str) {
             if (err) {
@@ -53,6 +50,7 @@ module.exports = function (options) {
 
                 file.extension = "css";
                 file.string = css;
+                debug("css file rendered", file.filename);
                 done();
             });
         });
