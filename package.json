@@ -6,7 +6,8 @@
     "component",
     "builder",
     "plugin",
-    "less"
+    "less",
+    "styles"
   ],
   "author": "Dominic Barnes <dominic@dbarnes.info>",
   "homepage": "https://github.com/dominicbarnes/component-builder-less",
